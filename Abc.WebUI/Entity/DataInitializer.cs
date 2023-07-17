@@ -27,17 +27,17 @@ namespace Abc.WebUI.Entity
 
             var urunler = new List<Product>()
             {
-                new Product(){Name="Canon EOS 2000D ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true},
-                new Product(){Name="Nikon Coolpix P1000 ", Description="Nikon Coolpix P1000 Fotoğraf Makinesi İthalatçı Garantili", Price=31.749, IsApproved=true, Stock=35, CategoryId=1,IsHome=true},
-                new Product(){Name="Canon EOS 250D", Description="Canon EOS 250D + EF-S 18-55mm f/3.5-5.6 DC III Siyah Fotoğraf Makinesi (Canon Eurasia Garantili)", Price=22.500, IsApproved=true, Stock=67, CategoryId=1,IsHome=true},
-                new Product(){Name="Canon EOS 20F ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true},
-                new Product(){Name="Canon EOS 200D ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true},
+                new Product(){Name="Canon EOS 2000D ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true, Image="1.jpg"},
+                new Product(){Name="Nikon Coolpix P1000 ", Description="Nikon Coolpix P1000 Fotoğraf Makinesi İthalatçı Garantili", Price=31.749, IsApproved=true, Stock=35, CategoryId=1,IsHome=true, Image="2.jpg"},
+                new Product(){Name="Canon EOS 250D", Description="Canon EOS 250D + EF-S 18-55mm f/3.5-5.6 DC III Siyah Fotoğraf Makinesi (Canon Eurasia Garantili)", Price=22.500, IsApproved=true, Stock=67, CategoryId=1,IsHome=true, Image="3.jpg"},
+                new Product(){Name="Canon EOS 20F ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true, Image="4.jpg"},
+                new Product(){Name="Canon EOS 200D ", Description="Canon EOS 2000D + EF-S 18-55mm f/3.5-5.6 DC III Fotoğraf Makinesi (Canon Eurasia", Price=13.599, IsApproved=true, Stock=129, CategoryId=1,IsHome=true, Image="5.jpg"},
 
-                new Product(){Name="IPhone-7", Description="Iphone 7 Cep Telefonu", Price=13.599, IsApproved=true, Stock=129, CategoryId=2,IsHome=true},
-                new Product(){Name="IPhone-8", Description="Iphone 8 Cep Telefonu", Price=13.599, IsApproved=true, Stock=25, CategoryId=2,IsHome=true},
-                new Product(){Name="IPhone-9", Description="Iphone 9 Cep Telefonu", Price=13.599, IsApproved=true, Stock=32, CategoryId=2,IsHome=true},
-                new Product(){Name="IPhone-10", Description="Iphone 10 Cep Telefonu", Price=13.599, IsApproved=true, Stock=16, CategoryId=2,IsHome=true},
-                new Product(){Name="IPhone-11", Description="Iphone 11 Cep Telefonu", Price=13.599, IsApproved=true, Stock=159, CategoryId=2,IsHome=true},
+                new Product(){Name="IPhone-7", Description="Iphone 7 Cep Telefonu", Price=13.599, IsApproved=true, Stock=129, CategoryId=2,IsHome=true, Image="1.jpg"},
+                new Product(){Name="IPhone-8", Description="Iphone 8 Cep Telefonu", Price=13.599, IsApproved=true, Stock=25, CategoryId=2,IsHome=true, Image="1.jpg"},
+                new Product(){Name="IPhone-9", Description="Iphone 9 Cep Telefonu", Price=13.599, IsApproved=true, Stock=32, CategoryId=2,IsHome=true, Image="1.jpg"},
+                new Product(){Name="IPhone-10", Description="Iphone 10 Cep Telefonu", Price=13.599, IsApproved=true, Stock=16, CategoryId=2,IsHome=true, Image="1.jpg"},
+                new Product(){Name="IPhone-11", Description="Iphone 11 Cep Telefonu", Price=13.599, IsApproved=true, Stock=159, CategoryId=2,IsHome=true, Image="1.jpg"},
 
             };
             foreach (var urun in urunler)

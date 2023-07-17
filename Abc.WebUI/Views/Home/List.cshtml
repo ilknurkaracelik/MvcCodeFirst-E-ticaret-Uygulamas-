@@ -1,41 +1,30 @@
-﻿@using Abc.WebUI.Entity
-@model IEnumerable<Product>
+﻿@using Abc.WebUI.Models
+@model IEnumerable<ProductModel>
 @{
     ViewBag.Title = "List";
 }
 
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-                The current button
-            </button>
-            <button type="button" class="list-group-item list-group-item-action">A second item</button>
-            <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-            <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+<div class="container pb-5">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Action("GetCategories", "Home")
         </div>
-    </div>
 
-    <div class="col-md-9">
-        <div class="row">
-
-            @foreach (var urun in Model)
+        <div class="col-md-9">
+            @if (Model.Count() == 0)
             {
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="holder.js/100px160/" class="card-img-top" alt="@urun.Name">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/Home/Details/@urun.Id">@urun.Name</a></h5>
-                            <p class="card-text">@urun.Description</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">@urun.Price</small>
-                        </div>
-                    </div>
+                <div class="alert alert-warning" role="alert">
+                    Bu kategoride bir ürün bulunamadı.
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning" role="alert">
+                    @Model.Count() adet ürün bulundu.
                 </div>
             }
 
+            @Html.Partial("_ProductList", Model)
         </div>
     </div>
 </div>
